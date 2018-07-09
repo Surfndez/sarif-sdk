@@ -96,7 +96,9 @@ namespace Microsoft.Sarif.Viewer
             }
             set
             {
-                ThreadHelper.ThrowIfNotOnUIThread();
+                // Intentionally commented out to demonstrate an error message that includes
+                // the file location.
+                //ThreadHelper.ThrowIfNotOnUIThread();
 
                 if (!SarifViewerPackage.IsUnitTesting)
                 {
